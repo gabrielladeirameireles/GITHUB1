@@ -1,15 +1,17 @@
-# TaskTracker - Fase 2 (Entrega Intermediaria)
+# TaskTracker - Bootcamp II (Fase 3)
 
-- Aluno: Gabriel Ladeira Meireles
-- Matricula: 22553764
-- Curso: Engenharia de Software
+**Desenvolvedor(a):** Gabriella Deirai Meireles  
+**Repositório GitHub:** https://github.com/gabrielladeirameireles/GITHUB1
 
-Aplicacao CLI em Python 3 para gerenciamento de tarefas.
+---
 
-## Funcionalidades
-- Cadastro de tarefas com validacao de titulo e prioridade.
-- Atribuicao automatica de status Pendente.
-- Listagem organizada de tarefas.
+## Como Executar o Projeto com Docker
 
-## Como Executar
-Execute no terminal: python3 src/main.py
+1. Construir a imagem Docker:
+docker build -t tasktracker-app .
+
+2. Rodar o container em modo isolado:
+docker run -it tasktracker-app
+
+3. Rodar via Orquestração (Recomendado):
+docker compose run tasktracker-app
